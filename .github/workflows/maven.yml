@@ -26,6 +26,7 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+        cache: maven
         maven-version: 3.9.6
     - name: Debug
       run: |
