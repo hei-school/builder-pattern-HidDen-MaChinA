@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class BuilderTest {
     @Test
-    public void createCarUsingDirector(){
+    public void testCreateCarUsingDirector(){
         CarBuilder builder = new CarBuilder();
         Director director = new Director();
         Car utilityCar = director.buildUtilityCar(builder);
@@ -16,7 +16,7 @@ public class BuilderTest {
         assertEquals("High power", powered.getEngine());
     }
     @Test
-    public void createCarUsingBuilder(){
+    public void testCreateCarUsingBuilder(){
         Builder builder = new CarBuilder();
         Car expected = new Car(4,"Standard","Standard",false);
         CarBuilder myCarBuilder = (CarBuilder) builder.setEngine("Standard").setSeats(4).setTripComputer("Standard");
