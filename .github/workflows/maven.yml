@@ -27,10 +27,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-<<<<<<< HEAD
         maven-version: 3.9.6
-=======
->>>>>>> parent of 015ffed (feat: change mvn version in CI)
     - name: Debug
       run: |
         echo "Test classes:"

@@ -5,7 +5,7 @@ import org.example.builder.Director;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class BuilderTests {
+public class BuilderTest {
     @Test
     public void createCarUsingDirector(){
         CarBuilder builder = new CarBuilder();
